@@ -9,14 +9,13 @@ jobs:
     # define environment
     runs-on: ubuntu-latest
     steps:
-      # Step 1
-      - name: Print greeding
+      - name: Print greeting
         run: echo "Hello World!"
-      # Step 2
-      - name: Print goodby
+
+      - name: Print goodbye
         run: echo "Done - bye!"
-      # Step 3 - Run multiple commands in one step
+
       - name: Run Multiple Commands
-      - run: |
+        run: |
           echo "First output"
           echo "Second output"
