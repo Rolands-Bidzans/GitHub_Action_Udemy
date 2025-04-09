@@ -1,0 +1,17 @@
+# Workflow name
+name: First Workflow
+
+# manually trigger
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    # define environment
+    runs-on: ubuntu-latest
+    steps:
+      #Step 1
+      - name: Print greeding
+        run: echo "Hello World!"
+      #Step 2
+      - name: Print goodby
+        run: echo "Done - bye!"
