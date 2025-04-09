@@ -1,0 +1,21 @@
+# Workflow name
+name: Test Project
+
+# manually trigger
+on: push
+
+jobs:
+  test:
+    # define environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install NodeJs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci # safier than npm install
+      - name: Run tests
+        run: npm test

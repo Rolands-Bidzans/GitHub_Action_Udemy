@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.idea
+.vscode
+
+# Cache
+.npm
+.pnpm-lock.yaml
