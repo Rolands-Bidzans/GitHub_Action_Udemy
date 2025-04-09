@@ -2,7 +2,7 @@
 name: dEPLOY Project
 
 # manually trigger
-on: push
+on: [push, workflow_dispatch]
 
 jobs:
   test:
